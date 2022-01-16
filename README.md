@@ -19,3 +19,5 @@ Either clone or download, leave the file structure intact otherwise it will not 
 £50 to the most original revision - £100 to a better adaptation of the code - maybe a 'Frogger Clone'
 
 Prize only offered to Evercom Technology Limited employees in the UK
+
+EASTER EGGS BUY BONUS POINTS!
