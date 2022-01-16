@@ -1,6 +1,7 @@
 import pygame
+from pygame.sprite import Sprite
 
-class Ship:
+class Ship(Sprite):
 	"""A class to manage the ship."""
 
 	def __init__(self, ai_game):
@@ -11,7 +12,8 @@ class Ship:
 
 		# Load a ship image and get its rect
 
-		self.image = pygame.image.load('images/ship.bmp')
+		self.image = pygame.image.load('images/ship.png').convert_alpha()
+		self.image.set_colorkey((0, 0, 0))
 		self.rect = self.image.get_rect()
 
 		# Start each new ship at the bottom of the screen
@@ -25,6 +27,8 @@ class Ship:
 
 		self.moving_right = False
 		self.moving_left = False
+
+		super().__init__()
 
 	def update(self):
 		"""Update the ship's position based on movement flag"""
